@@ -4,141 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sample Web Page Title</title>
+    <meta name="description" content="Sample web page description goes here.">
 
-<link rel="stylesheet" href="assets/css/resets.css">
-<link rel="stylesheet" href="assets/css/hero-image.css">
-<link rel="stylesheet" href="assets/css/layout.css">
-<link rel="stylesheet" href="assets/css/grid-3.css">
-<link rel="stylesheet" href="assets/css/utils.css">
+	<!-- Preload hero image -->
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/lunadoge.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
+	<!-- Google Fonts -->
 
-<!-- Font Awesome 5 icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+	<!-- Font Awesome 5 icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+    <!-- Light Awesome icons -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Google Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet">
+
 </head>
+
 
 <body>
 
- <!-- hero block -->
-    <header class="hero-block text-center">
+    <!-- navigation menu -->
+    <nav></nav>
 
-        <div class="hero-text-container">
-			<h1>Lorem Malesuada</h1>
-			<h2>Etiam tincidunt risus nec sollicitudin.</h2>
+    <!-- header hero block -->
+    <header class="hero-block">
+        <div class="hero-text-container text-center-desktop text-center-mobile">
+            <h1 class="text-shadow fade-in">SUPER SNAZZY</h1>
+            <h2 class="text-shadow fade-in">Fashions you will love at prices you can afford.</h2>
+            
         </div>
-
         <div class="hero-bg-media">
-            <img src="assets/img/model.jpg" alt="sample background image">   
+            <video loop="" playsinline="" muted="" autoplay="" poster="assets/videos/hero-still.jpg" class="background-video" disablepictureinpicture="" preload="auto">
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+        </video>
         </div>
-
         <div class="bg-overlay"></div>
+    </header>
+    <header>
 
     </header>
-    <!-- /hero block -->
+
+
+    <!-- main content with sections -->
     <main>
-        <article>
-        
-            <section class="container-flex">
-        
-                <div class="col-1 text-center">
-                    <h2>Lorem Malesuada Dolor</h2>
-                    <p>Etiam tincidunt risus nec odio sollicitudin, non blandit ipsum facilisis class aptent.</p>
-                </div>
-        
-                <div class="col-3">
-                    <figure>
-                        <img src="assets/img/design-420x250.jpg" alt="Design">
-                    </figure>
-        
-                    <h3>Lorem ipsum dolo</h3>
-                    <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Vel, sit perferendis officia ad molestias optio.</p>
-                    
-                    <a href="#" class="btn btn-ghost btn-rounded">
-                        <i class="fas fa-arrow-circle-right"></i>Order Now
-                    </a>
-                  
-                </div>
-        
-                <div class="col-3">
-                    <figure>
-                        <img src="assets/img/woman-pink-420x250.jpg" alt="Woman pink">
-                    </figure>
-        
-                    <h3>Lorem ipsum dolo</h3>
-                    <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Vel, sit perferendis officia ad molestias optio.</p>
-        
-                    <a href="#" class="btn btn-ghost btn-rounded">
-                        <i class="fas fa-shopping-cart"></i>Order Now
-                    </a>
-                </div>
-        
-                <div class="col-3">
-                    <figure>
-                        <img src="assets/img/laptop-window-420x250.jpg" alt="Laptop window">
-                    </figure>
-        
-                    <h3>Lorem ipsum dolo</h3>
-                    <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Vel, sit perferendis officia ad molestias optio.</p>
-        
-                    <a href="#" class="btn btn-ghost btn-rounded">
-                        <i class="fas fa-shopping-cart"></i>Order Now
-                    </a>
-        
-                </div>
-        
-            </section>
+     
+        <section class="theme-one text-center">
 
+            <h2>Lorem Malesuada Dolor</h2>
+            <p class="standfirst">Welcome to Europe's number one fashion retailer. No one rivals our collection of <a href="#hats"> hats</a>, <a href="#scarves">scarves</a>, <a href="#t-shirt">  t-shirts</a>, and <a href="#footwear"> footwear</a>. And we place customer satisfaction at the heart of all we do.</p>
+        
+        </section>
+
+            <section class="theme-two">
+
+                <h2>Lorem Malesuada Dolor</h2>
+                <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Vel, sit <a href="#">perferendis officia</a> ad molestias optio deserunt iste excepturi. qui unde dolores architecto error assumenda iusto ipsum.</p>
             
-            <section class="container-flex bg-pink">
+                <figure>
+                    <img src="assets/img/800x480-business-group.jpg" alt="Business group">
+                </figure>
+            
+                <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Vel, sit <a href="#">perferendis officia</a> ad molestias optio deserunt iste excepturi. qui unde dolores architecto error assumenda iusto ipsum.</p>
+                <div class="container-btn">
+                    <a href="#" class="btn btn-primary btn-rounded"><i class="fas fa-shopping-cart"></i> Order now</a>
+                </div>
+            
+            
+            
+            <section class="theme-three">
 
-                <div class="col-3">
-                    <figure>
-                        <img src="assets/img/food-420x250.jpg" alt="Food">
-                    </figure>
+	<h2>Lorem Malesuada Dolor</h2>
+	<p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Vel, sit <a href="#">perferendis officia</a> ad molestias optio deserunt iste excepturi. qui unde dolores architecto error assumenda iusto ipsum.</p>
+
+	<figure>
+		<img src="assets/img/footwear.jpg" alt="footwear">
+	</figure>
+
+    <p>Our order fulfilment team is obsessed with customer service. We have thousands of original designs across dozens of different product types – you are guaranteed to find something you love!</p>
+
+
+	<p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Vel, sit <a href="#">perferendis officia</a> ad molestias optio deserunt iste excepturi. qui unde dolores architecto error assumenda iusto ipsum.</p>
+	<div class="container-btn">
+		<a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Order now</a>
+	</div>
+
+
+           
+           
+            
+                
+            
+    </section>
+                                   
         
-                    <h3>Lorem ipsum dolo</h3>
-                    <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Vel, sit perferendis officia ad molestias optio.</p>
+                
         
-                    <a href="#" class="btn btn-ghost btn-rounded">
-                        <i class="fas fa-shopping-cart"></i>Order Now
-                    </a>
-                </div>
-        
-                <div class="col-3">
-                    <figure>
-                        <img src="assets/img/kitchen-420x250.jpg" alt="Kitchen">
-                    </figure>
-        
-                    <h3>Lorem ipsum dolo</h3>
-                    <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Vel, sit perferendis officia ad molestias optio.</p>
-        
-                    <a href="#" class="btn btn-ghost btn-rounded">
-                        <i class="fas fa-shopping-cart"></i>Order Now
-                    </a>
-                </div>
-        
-                <div class="col-3">
-                    <figure>
-                        <img src="assets/img/shop-420x250.jpg" alt="Shop">
-                    </figure>
-        
-                    <h3>Lorem ipsum dolo</h3>
-                    <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Vel, sit perferendis officia ad molestias optio.</p>
-        
-                    <a href="#" class="btn btn-gradient btn-rounded">
-                        <i class="fas fa-shopping-cart"></i>Order Now
-                    </a>
-                </div>
-                    
-            </section>
-        
-        </article>
-        </main>
-        
-        </body>
-        </html>
+
+    </main>
+
+    
+    <!-- footer -->
+    <footer></footer>
+   
+</body>
+</html>
