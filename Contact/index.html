@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Web Page Title</title>
+    <title>Thamires Reis | Contact Page</title>
     <meta name="description" content="Sample web page description goes here.">
 
 	<!-- Preload hero image -->
@@ -26,6 +26,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
     rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 
 
@@ -37,9 +39,14 @@
     <!-- header -->
     <header class="hero-block">
         <div class="hero-text-container text-center-desktop text-center-mobile">
-            <h1 class="text-shadow">Get in touch</h1>
-            <h2 class="text-shadow">Use the form below to let me know a little more about your objectives and I'll get back to you.</h2>
-            
+
+            <h1 class="text-shadow">Thamires Reis</h1>
+
+            <h2 class="text-shadow">Let's work together</h2>
+
+            <div class="container-btn">
+                <a href="../portfolio/index.html" class="btn btn-primary"><span>Portfolio</span><i class="far fa-envelope"></i></a>
+            </div>
         </div>
             <div class="hero-bg-media">
             <img src="../assets/img/mainphoto.jpg" alt="Placeholder image">
@@ -58,11 +65,11 @@
            <section class="container-contact-form">
 
                 <!-- Contact form starts here -->
-                <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/nnnnnnnn">
+                <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/xvolodke">
 
                     <div class="contact-form-upper text-center">
                         <h2>Get in touch</h2>
-                        <p>Use the form below to let me know a little more about your objectives and I'll get back to you.<a href="#">tempor convallis</a>, enim urna bibendum enim, eu ultrices leo libero proin.</p>
+                        <p>Use the form below to let me know a little more about your objectives and I'll get back to you.</p>
                     </div>
 
                     <!-- Begin contact form fields -->
@@ -102,9 +109,9 @@
     <!-- footer -->
     <footer>
 
-        <h2>Consectetur Aipisicing</h2>
+        <h2>Thamires, web designer</h2>
 
-        <h3>Nulla Repellat Nesciunt</h3>
+        <h3>Excellence in digital creation</h3>
 
         <ul class="footer-links">
             <li><a href="../index.html">Home</a></li>
@@ -121,6 +128,23 @@
         <p class="privacy"><a href="privacy.html">Privacy &amp; Legal</a></p>
 
     </footer>
-   
+   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#aa0000",
+      "text": "#ffdddd"
+    },
+    "button": {
+      "background": "#ff0000"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "href": "https://Thamires-Reis.github.io/privacy.html"
+  }
+});
+</script>
 </body>
 </html>
