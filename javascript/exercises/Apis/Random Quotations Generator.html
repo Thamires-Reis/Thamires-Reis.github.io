@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotations Generator</title>
+    <meta name="description" content="An example of using the JavaScript Fetch API to update the content of a web page from a remote server.">
+
+    <link rel="stylesheet" href="https://munnelly.com/lunevedy/assets/css/lunevedy.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet"> 
+
+    <style>
+
+        body, section { background-color:#f2f5f5 }
+        .btn-solid { 
+            margin-top: 20px;
+            padding: 14px 20px;
+            display: inline-block;
+            font-size: 20px;
+            background-color: blue;
+            border-color: blue;
+            color: #fff;
+
+        }
+
+        .btn-solid:hover { 
+            background-color: blue;
+            border-color: blue;
+            color: #fff
+        }
+        .col-3 {
+            box-shadow: 8px 10px 8px #888;
+            border: solid 1px #888;
+            border-radius: 10px;
+            background-color:#fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+           
+        }
+        .col-3 p {
+            font-family: 'Lora' serif;
+            font-style: italic;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    
+
+
+	<section class="container-flex text-center" style="padding-bottom: 0">
+		<div class="col-1 text-center">
+			<h2>Inspiring Quotations</h2>
+			<h3>Click the button below to be inspired by nine uplifting quotations from wise men and women through the ages.</h3>
+
+            <a class="btn btn-solid" id="btn-quotes">View Quotes</a>
+		</div>
+
+    </section>
+
+    <!-- This section will be updated by JavaScript -->
+    <section class="container-flex text-center" id="quotes-box">
+
+        <div>
+
+
+	</section><!-- end of section updated by JavaScript-->
+
+    <!-- Quotation endpoint:   https://type.fit/api/quotes -->
+
+
+    
+    <script>
+        document.querySelector("#btn-quotes").addEventListener("click", fetchRandomNumQuotes);
+
+      async function fetchRandomNumQuotes() {
+      
+        await fetch('https://type.fit/api/quotes')
+    
+    .then(response => {
+        if (response.status !== 200) {
+            console.log('Error Status Code: ' + response.status);
+            return;
+        }
+        response.json().then((data) => {
+            const lowerNum = getRandomInt(0, data.length-10);
+            console.log("Got this far")
+                const upperNum = lowerNum + 8; 
+                let html_block = "";
+                for (i= lowerNum; i <= upperNum; i++) { 
+               // console.log(`${[i]}: ${data[i].text} Source: ${data[i].author}`);
+               html_block = html_block + `<div class="col-3"><p>
+                                    <span>&#8220;</span>${data[i].text}<span>&#8220;</span></p><h3>${data[i].author}</h3></div>`;
+                                document.querySelector("#quotes-box").innerHTML = html_block;
+               }
+
+                 
+             });
+
+                })
+
+                .catch(error => {
+                    // handle any error
+                });
+
+            }
+
+                    function getRandomInt(min, max) {
+                    min = Math.ceil(min);
+                    max = Math.floor(max);
+                    return Math.floor(Math.random() * (max - min + 1) + min); 
+                    }
+
+
+                </script>
+
+</body>
+</html>
